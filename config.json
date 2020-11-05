@@ -1,0 +1,20 @@
+{
+	"tracker": {
+		"hls_root_dir": "/tmp/egress/hls/",
+		"dead_threshold": 15,
+		"cookie": {
+			"domain": ".example.com",
+			"prefix": "stream_",
+			"expiration": 86400
+		},
+		"hash_salt": "not_really_needed_but_added_just_in_case",
+		"redis_key_prefix": "stream_"
+	},
+
+	"redis": {
+		"host": "127.0.0.1",
+		"port": 6379,
+		"db": 0
+	},
+	"stream_regex": "^[a-zA-Z0-9_-]+$"
+}

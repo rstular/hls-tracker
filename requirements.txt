@@ -1,0 +1,4 @@
+Flask>=1.1.2
+Flask-Cors>=3.0.9
+redis>=3.5.3
+uWSGI>=2.0.19.1

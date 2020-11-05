@@ -1,0 +1,14 @@
+[Unit]
+Description=HLS viewer tracking service
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/srv/services/hls_tracker
+Environment="PATH=/srv/services/hls_tracker/.venv/bin"
+ExecStart=/srv/services/hls_tracker/.venv/bin/uwsgi --ini hlstracker.ini
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
